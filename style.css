@@ -1,0 +1,209 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=EB+Garamond&family=Island+Moments&family=Montserrat&family=Noto+Serif&family=Oswald:wght@500;600&family=Poppins:wght@500&family=Roboto:ital,wght@1,100&display=swap');
+ 
+/* ********Common style or Utilities*********** */
+    body{
+        font-family: 'Poppins', sans-serif;
+        margin: 0;
+    }
+    .container{
+        margin-left: 100px;
+        margin-bottom: 60px;
+    } 
+
+/* ******  Influencer Journey Styles ********   */
+
+
+    .top-influencer-title{
+        font-size: 24px;
+    }
+    .top-influencer{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+    .influencer-title{ 
+        font-size: 52px;
+    }
+    .preebook-link{
+        text-decoration: none;
+        color: white;
+        background-color: #E02C6D;
+        border-radius: 41px;
+        padding: 10px 24px;
+    }
+    .influencer-image img{
+        width: 440px;
+    }
+
+ 
+
+
+/* ****** Logo styles  ******* */
+
+    .logos{
+        width: 1110px;    
+        border-top: 1px solid gray; 
+        border-bottom: 1px solid gray; 
+        padding: 30px 0;
+        text-align: center; 
+    }
+    .logos img{ 
+        margin: 10px;
+    }
+
+
+
+/* *****Popular Collection Styles******** */ 
+
+    .popular-collection{
+        width:1047px;
+        margin: auto; 
+    }
+    .popular-collection-title{
+        text-align: center;
+        font-size: 28px;
+        margin-bottom: 70px;
+        margin-top: 70px;
+    }
+    .colections{
+        display: grid;
+        grid-template-columns:repeat(3,1fr);
+        grid-row-gap: 30px;
+        grid-column-gap: 30px;
+    }
+    .collection{
+        padding: 10px;
+        border-radius: 5px;
+        box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15)
+    }
+
+    .collction-thumbnail img{
+        width: 300px;
+        height:256px;
+    }
+    
+
+    .colection-title{
+        font-size: 28px;
+    }
+    .dollar{
+        color: #787885;
+        font-size: 24px;
+    }
+    .collection-detail span{
+        color: #787885;
+        font-size: 14px;
+    }
+    .collection-rating .fas{
+        color: #FB8200;
+    }
+    .see-more{
+        text-align: end;
+        margin-top: 50px;
+    }
+    .see-more a{
+        text-decoration: none;
+        color: #E02C6D;
+        font-weight: bold;
+    }
+
+
+/* Contact Styles */
+.contact-area{
+    text-align: center; 
+}
+.contact-area input{
+    width: 50%;
+    height: 20px; margin-top: 10px;
+}
+.contact-area input[type="submit"]{
+   
+    border: 0;
+    height: 50px;
+    background-color: #E02C6D;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 10px;
+     
+}
+
+
+
+ /* **** Footer Styles ***** */
+    .footer-area{
+        background-color: rgb(3, 3, 38);
+        color: white;
+        text-align: center;
+        padding: 10px;
+    }
+    .footer-area .social-icon{
+        padding: 8px;
+        border-radius: 50%;
+       background-color: #444242;
+    }
+
+ /* ***** media query styles ******* */
+
+ 
+ /* -------Small Device------ */
+
+@media only screen and (max-width:688px){
+    .container{
+        margin-left: 10px;
+        text-align: center;
+    }
+     
+    .top-influencer{ 
+        grid-template-columns: repeat(1,1fr);
+    }
+    .influencer-title{ 
+        font-size: 28px;
+    }
+    .influencer-image{
+       margin-top: 50px;
+    }
+
+    .logos,.popular-collection{
+        width: 100%; 
+    } 
+
+    .colections{ 
+         grid-template-columns:repeat(1,1fr); 
+        
+    } 
+    .collction-thumbnail img{
+        width: 100%;
+    }
+
+}
+
+ /* -------Medium Device------ */
+ 
+@media only screen and (min-width: 688px) and
+(max-width:992px){
+    .container{
+        margin-left: 10px;
+        
+    }
+
+    .influencer-title{ 
+        font-size: 38px;
+    }
+    .top-influencer{ 
+        grid-template-columns: repeat(2,1fr);
+    }
+    .influencer-image img{
+        width: 340px;
+    }
+    .logos,.popular-collection{
+        width: 100%; 
+    }
+    .colections{ 
+        grid-template-columns:repeat(2,1fr); 
+   } 
+   .collction-thumbnail img{
+    width: 100%;
+}
+
+}
